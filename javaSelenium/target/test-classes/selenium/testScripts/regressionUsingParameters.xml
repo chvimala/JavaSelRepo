@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="regression" verbose="1" parallel="tests" thread-count="2">
+
+	<test name="regressionTestFirefox">
+	  <parameter name="browserName"  value="firefox"/>	
+		<groups>
+			<run>
+				<include name="regression" />
+			</run>
+		</groups>
+		<classes>
+			<class name="selenium.testScripts.NaukriTestUsingParameters" />
+		</classes>
+	</test>
+	
+		<test name="regressionTestChrome">
+	  <parameter name="browserName"  value="chrome"/>	
+		<groups>
+			<run>
+				<include name="regression" />
+			</run>
+		</groups>
+		<classes>
+			<class name="selenium.testScripts.NaukriTestUsingParameters" />
+		</classes>
+	</test>
+</suite>

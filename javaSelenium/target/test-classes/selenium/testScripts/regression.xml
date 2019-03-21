@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="regression" verbose="1">
+
+	<test name="regressionTest">
+		<groups>
+			<run>
+				<include name="regression" />
+			</run>
+		</groups>
+		<classes>
+			<class name="selenium.testScripts.NaukriTestUsingGroups" />
+		</classes>
+	</test>
+</suite>

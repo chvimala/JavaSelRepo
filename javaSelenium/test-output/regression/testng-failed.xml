@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [regression]" parallel="tests">
+  <parameter name="browserName" value="chrome"/>
+  <test name="regressionTestChrome(failed)" parallel="tests">
+    <parameter name="browserName" value="chrome"/>
+    <groups>
+      <run>
+        <include name="regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="selenium.testScripts.NaukriTestUsingParameters">
+        <methods>
+          <include name="reg2"/>
+          <include name="afterClassMethod"/>
+          <include name="afterClassMethod"/>
+          <include name="beforeClassMethod"/>
+          <include name="beforeClassMethod"/>
+        </methods>
+      </class> <!-- selenium.testScripts.NaukriTestUsingParameters -->
+    </classes>
+  </test> <!-- regressionTestChrome(failed) -->
+  <test name="regressionTestFirefox(failed)" parallel="tests">
+    <parameter name="browserName" value="firefox"/>
+    <groups>
+      <run>
+        <include name="regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="selenium.testScripts.NaukriTestUsingParameters">
+        <methods>
+          <include name="reg2"/>
+          <include name="afterClassMethod"/>
+          <include name="afterClassMethod"/>
+          <include name="beforeClassMethod"/>
+          <include name="beforeClassMethod"/>
+        </methods>
+      </class> <!-- selenium.testScripts.NaukriTestUsingParameters -->
+    </classes>
+  </test> <!-- regressionTestFirefox(failed) -->
+</suite> <!-- Failed suite [regression] -->
